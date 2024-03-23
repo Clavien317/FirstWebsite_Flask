@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User compte</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .body {
+            margin-top: 7vw;
+        }
+
+        nav {
+            float: right;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 2vw;
+        } 
+
+        .logo {
+            float: left;
+            margin-left: 3vw;
+        }
+
+        .body p {
+            width: 50%;
+            margin-left: 25%;
+        }
+
+        table
+        {
+            width: 60%;
+            margin-left: 20%;
+
+        }
+
+        table th
+        {
+            padding: 1vw;
+            background-color: rgb(25, 70, 203);
+            color: white;
+        }
+
+        td
+        {
+            padding: 0.5vw;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="logo">LOGO</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/inscription">S'inscrire</a></li>
+            <li><a href="">Se connecter</a></li>
+            <li><a href="/liste">Liste</a></li>
+            <li><a href="">Aide</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="body">
+        <h1>Liste des utilisateurs</h1>
+
+        {% if resultat %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Mot de passe</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for utilisateur in resultat %}
+                        <tr>
+                            <td>{{ utilisateur[0]}}</td>
+                            <td>{{ utilisateur[1] }}</td>
+                            <td>{{ utilisateur[2] }}</td>
+                            <td>{{ utilisateur[3]}}</td>
+                            <td>
+                                <button>Modifier</button>
+                                <button>Supprimer</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbod

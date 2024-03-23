@@ -1,0 +1,40 @@
+body
+{
+    text-align: center;
+}
+
+.body
+{
+    margin-top: 7vw;
+}
+
+nav
+{
+    float: right;
+}
+
+ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 2vw;
+} 
+
+.logo
+{
+    float: left;
+    margin-left: 3vw;
+}
+
+.body p
+{
+    width: 50%;
+    margin-left: 25%;
+}

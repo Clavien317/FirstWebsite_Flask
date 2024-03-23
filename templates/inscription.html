@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+     body
+        {
+            text-align: center;
+        }
+
+        nav
+        {
+            float: right;
+        }
+
+        ul li
+        {
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a
+        {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 2vw;
+        } 
+
+        .logo
+        {
+            float: left;
+            margin-left: 3vw;
+        }
+
+        form
+        {
+            width: 60%;
+            margin-left: 20%;
+            border: 1px solid #000;
+            padding: 2vw;
+            border-radius: 13vw;
+        }
+
+        form input
+        {
+            width: 70%;
+            height: 2vw;
+        }
+
+        form label
+        {
+            float: left;
+            margin-left: 15%;
+        }
+
+        form button
+        {
+            width: 30%;
+            height: 3vw;
+            border: 0;
+            border-radius: 10px;
+            background-color: rgb(42, 123, 236);
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="logo">LOGO</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/inscription">S'inscrir</a></li>
+            <li><a href="">Se connect</a></li>
+            <li><a href="">Aide</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <h1>....... Inscrivez vous ........</h1>
+    <br>
+    <br>
+    <form action="/traitement/inscription" method="post">
+        <label for="">Nom</label>
+        <br>
+        <input type="text" name="nom">
+        <br>
+        <br>
+
+        <label for="">Email</label>
+        <br>
+        <input type="text" name="email">
+        <br>
+        <br>
+
+        <label for="">Mot de passe</label>
+        <br>
+        <input type="text" name="password">
+        <br>
+        <br>
+        <br>
+
+        <button>Ajouter</button>
+    </form>
+    <br>
+</body>
+</html>
